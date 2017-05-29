@@ -8,6 +8,6 @@ RUN apk add --update curl && \
     rm -rf /var/lib/apt/lists/* && \
     unzip consul-template_${CONSUL_TEMPLATE_VERSION}_linux_amd64.zip && \
     mv consul-template /usr/local/bin/consul-template && \
-    rm consul-template_${CONSUL_TEMPLATE_VERSION}_linux_amd64.zip && \
+    rm consul-template_${CONSUL_TEMPLATE_VERSION}_linux_amd64.zip
 
 ENTRYPOINT ["/usr/local/bin/consul-template"]
