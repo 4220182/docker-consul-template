@@ -9,7 +9,7 @@ RUN apk add --update ca-certificates \
  && apk del --purge deps \
  && rm /var/cache/apk/*
 
-ENV CONSUL_TEMPLATE_VERSION=0.18.3
+ENV CONSUL_TEMPLATE_VERSION=0.18.5
 
 RUN apk add --update curl && \
     curl -LO http://releases.hashicorp.com/consul-template/${CONSUL_TEMPLATE_VERSION}/consul-template_${CONSUL_TEMPLATE_VERSION}_linux_amd64.zip && \
